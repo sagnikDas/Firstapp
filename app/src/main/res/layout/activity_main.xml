@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#d4ece2"
+    tools:context="com.sagnik.firstapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_text"
+        android:textSize="45dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/view"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:textSize="50sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:id="@+id/input1"
+        android:hint="Enter your name"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:id="@+id/input2"
+        android:hint="Enter your address"
+        android:inputType="text"
+        />
+
+
+    <Button
+        android:layout_below="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textColor="@color/colorPrimary"
+        android:onClick="minionMe"
+        android:background="#b9cec5"/>
+</RelativeLayout>

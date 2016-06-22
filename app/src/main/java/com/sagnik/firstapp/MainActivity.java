@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText inp1,inp2;
 
-    
+
     TextView dis;
 
 
