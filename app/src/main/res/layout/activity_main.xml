@@ -48,6 +48,7 @@
 
 
     <Button
+        android:id="@+id/savebtn"
         android:layout_below="@+id/input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,4 +56,15 @@
         android:textColor="@color/colorPrimary"
         android:onClick="minionMe"
         android:background="#b9cec5"/>
+
+    <Button
+        android:id="@+id/loadbtn"
+        android:layout_below="@+id/savebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="load"
+        android:onClick="loadMiniontext"
+        android:textColor="@color/colorPrimary"
+        android:background="#b9cec5"/>
+
 </RelativeLayout>
