@@ -23,7 +23,8 @@
     <TextView
         android:id="@+id/display"
         android:layout_width="match_parent"
-        android:textSize="50sp"
+        android:textSize="25sp"
+        android:textColor="#acac7f"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view"
         android:layout_centerHorizontal="true"/>
@@ -43,28 +44,35 @@
         android:layout_below="@+id/input1"
         android:id="@+id/input2"
         android:hint="Enter your address"
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="4"
         />
 
-
-    <Button
-        android:id="@+id/savebtn"
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_below="@+id/input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="save"
-        android:textColor="@color/colorPrimary"
-        android:onClick="minionMe"
-        android:background="#b9cec5"/>
-
-    <Button
-        android:id="@+id/loadbtn"
-        android:layout_below="@+id/savebtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="load"
-        android:onClick="loadMiniontext"
-        android:textColor="@color/colorPrimary"
-        android:background="#b9cec5"/>
+        >
+        <ImageButton
+            android:id="@+id/savebtn"
+            android:src="@drawable/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="minionMe"
+            android:backgroundTint="@color/colorPrimary"
+            >
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/loadbtn"
+            android:src="@drawable/load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="loadMiniontext"
+            android:backgroundTint="@color/colorPrimary">
+        </ImageButton>
+    </LinearLayout>
 
 </RelativeLayout>

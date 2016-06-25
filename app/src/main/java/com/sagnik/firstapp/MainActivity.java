@@ -35,9 +35,8 @@ public class MainActivity extends AppCompatActivity {
         inp1= (EditText)findViewById(R.id.input1);
         inp2= (EditText)findViewById(R.id.input2);
         dis=(TextView) findViewById(R.id.display);
-
-
     }
+
     private void writeToFile(String data)
     {
         try{
@@ -82,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadMiniontext(View view)
     {
-        Toast.makeText(getApplicationContext(),"Loading strings...",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Strings coming up...",Toast.LENGTH_LONG).show();
         dis.setText(readFromFile());
     }
 
